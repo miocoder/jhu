@@ -1,47 +1,115 @@
-.body {
-    box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    border: 0px ;
+    background: white;
 }
 
+h1 {
+    font-size: 28px;
+    clear: left;
+    float:left;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    border: 0px;
+    margin: 10px 0px 10px 0px;
+    /*background-color: yellow;*/
+    width:border-box;
+    
+}
+.row {
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+.section-container {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    /*border: 2px blueviolet solid;*/
+    width: 33.33%;
+    }
+    
+.section {
+        font-size: 16px;
+        box-sizing: border-box;
+        position: relative;
+        border: 1px black solid;
+        margin: 0;
+        padding: 2em 1em 1em 1em;
+        text-align:justify;
+    }
+    #section1 {
+        background-color:chartreuse;
+    }
+    #section2 {
+        background-color:blue;
+        color: white;
+        font-family: sans-serif;
+    }
+    #section3 {
+        background-color:coral;
+        font-family: monospace;
+    }
+
+    .section span {
+        font-size:20px;
+        width: 6em;
+        position:absolute;
+        top:0px;
+        right:0px;
+        padding: 0px 10px 0px 10px;
+        background-color:brown;
+        border-left: 1px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 1px;
+        border-color: black;
+        border-style: solid;
+        text-align: center;
+    }    
+    .section #span1 {
+        background-color:coral;
+    }
+    .section #span2 {
+        background-color:chocolate
+    }
+    .section #span3 {
+        background-color:tan
+    }
+    
 /* Small devices (mobile, 767px) */
-@media (max-width: 767px) { ... }
+@media (max-width: 767px) {
+    .section-container {
+        width: 100%;
+        float: left;
+    }
+}
 
 /* Medium devices (tablet, 768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) { ... }
-    .row {
-        float: auto;
-    }
-    .section {
+@media (min-width:768px) and (max-width:991px) {
+    .section-container {
         width: 50%;
         float: left;
     }
-    #section1 {
-        background-color:chartreuse;
-    }
-    #section2 {
-        background-color:aquamarine;
-    }
-    #section3 {
-        background-color:coral;
+    #section3-container {
         width: 100%;
     }
+}
 
 /* Large devices (large desktops, 992px and up) */
 @media (min-width: 992px) {
-    .row {
-        float: auto;
-    }
-    .section {
-        width: 30%;
+    .section-container {
+        width: 33.3333%;
         float: left;
     }
-    #section1 {
-        background-color:chartreuse;
-    }
-    #section2 {
-        background-color:aquamarine;
-    }
-    #section3 {
-        background-color:coral;
-    }
-    
+
 }
